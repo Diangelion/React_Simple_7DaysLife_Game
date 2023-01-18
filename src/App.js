@@ -19,24 +19,22 @@ function App() {
   const [textLoading, setTextLoading] = useState("Loading Game");
   let counter = 0;
 
-  const [logged, setLogged] = useState(false);
+  useEffect(() => {
+    return () => {
+      setLoader(true);
 
-  // useEffect(() => {
-  //   return () => {
-  //     setLoader(true);
+      const loadingInterval = setInterval(() => {
+        counter++;
+        setTextLoading((prevTextLoading) => prevTextLoading + ".");
+        if (counter == 4) setTextLoading("Loading Game");
+      }, 1000);
 
-  //     const loadingInterval = setInterval(() => {
-  //       counter++;
-  //       setTextLoading((prevTextLoading) => prevTextLoading + ".");
-  //       if (counter == 4) setTextLoading("Loading Game");
-  //     }, 1000);
-
-  //     setTimeout(() => {
-  //       clearInterval(loadingInterval);
-  //       setLoader(false);
-  //     }, 8000);
-  //   };
-  // }, []);
+      setTimeout(() => {
+        clearInterval(loadingInterval);
+        setLoader(false);
+      }, 8000);
+    };
+  }, []);
 
   return (
     <>
