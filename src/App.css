@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  background-image: linear-gradient(to right, #333, #ccc, #333);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Loading Screen */
+#Loader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
 }
 
-.App-header {
+/* Login Page*/
+.Login-container,
+.NotFound-container {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input[name="status"],
+input#TermsAndCond {
+  accent-color: #282c34;
+  width: 1rem;
+  height: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-radio {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.status-radio-container {
+  display: flex;
+  align-items: center;
+}
+
+#terms-cond-container {
+  display: flex;
+}
+
+.label-radio {
+  margin-left: 5px;
+}
+
+#terms-cond-text,
+#terms-cond-link {
+  color: #c0c0c0;
+}
+
+#terms-cond-link {
+  text-decoration: none;
+}
+
+#terms-cond-link:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/* In-Game */
+.Game-container .container {
+  min-height: 100vh;
+}
+
+.card-img-top {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+#Place-row button {
+  width: 25% !important;
+  background: transparent;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#Place-row button:hover {
+  background-color: #4caf50;
+}
+
+.Place-active {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+/* GameOver Page */
+.GameOver-container {
+  background-color: #880808;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* GameWin Page */
+.GameWin-container {
+  background-color: lime;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Not Found Page */
+.NotFound-text {
+  font-size: 2rem;
+  color: #959595;
 }

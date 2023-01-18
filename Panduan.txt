@@ -1,0 +1,16 @@
+Goals: Intelligence Lv.7 dalam 7 hari
+
+Makan ngurang 1% setiap 3 menit
+Main ngurang 1% setiap 10 menit
+Tidur ngurang 7% setiap 1 jam
+
+Perjalanan dari rumah ke univ/sekolah 30 menit
+makan smpe full = 30 menit
+belajar nambah 20% kalo tidur sm makan cukup, klo salah satu kurang nambah 10, kalo dua2 kurang nambah 5 (bisa dari jam 5 smpe jam 7 malem)
+main 2 jam smpe full
+tidur 8 jam smpe full
+
+Di sekolah gbs tidur, dirumah gbs belajar
+
+gk makan 2 hari (0 terus selama 2 hari) = mati/game over
+gk tidur 1 hari (0 terus selama 1 hari) = mati/game over
